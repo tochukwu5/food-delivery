@@ -5,6 +5,5 @@ export const connectDB = async () => {
     .connect(
       // process.env.MONGO_URL
       'mongodb+srv://david:David321.@cluster0.wwfal.mongodb.net/food-delivery'
-    )
-    .then(() =>console.log("DB Connected"));
+    ).then(() =>console.log("DB Connected"));
 };
