@@ -16,5 +16,4 @@ export const assets ={
 
 export const url = "https://food-delivery-backend-xorb.onrender.com";
 
-// export const url = 'https://food-delivery-backend-5b6g.onrender.com'
 
