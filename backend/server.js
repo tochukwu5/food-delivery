@@ -14,7 +14,12 @@ const port =process.env.PORT || 4000;
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: 'https://food-del-admin-bahl.onrender.com', // Frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+  credentials: true // Allow credentials if needed
+}));
 
 // DB connection
 connectDB();
